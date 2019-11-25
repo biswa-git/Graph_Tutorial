@@ -2,6 +2,8 @@
 int main(int argc, char* argv[])
 {
 	unique_ptr<graph> G(new graph(64, true));
+	
+	//MINIMUM NUMBER OF MOVE TO REACH A LOCATION ON CHESS BOARD FOR A KNIGHT FROM A INITIAL LOCATION
 	for (size_t i = 0; i < 8; i++)
 	{
 		for (size_t j = 0; j < 8; j++)
@@ -59,7 +61,7 @@ int main(int argc, char* argv[])
 		}
 	}
 
-
+	//INITIAL LOC: (4,4) = 3*8+3 = 27
 	G->Dijkstra(27);
 
 	return 0;
